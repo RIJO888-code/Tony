@@ -1,13 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
   build: {
-    outDir: 'dist',  // Ensure output goes to dist
+    outDir: 'dist',
   },
-  base: './',  // Use relative paths for static files
+  base: '/',  // Set the base path to root
 });

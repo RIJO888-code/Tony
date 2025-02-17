@@ -7,4 +7,8 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  build: {
+    outDir: 'dist', // Ensure build output goes to dist/
+  },
+  base: './', // Set relative paths for static assets
 });
